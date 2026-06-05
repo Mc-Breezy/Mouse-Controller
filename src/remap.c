@@ -83,7 +83,7 @@ static gpointer remap_loop(gpointer user_data)
                 if (button->code == ev.code)
                 {
                     //If the code matches an existing button, check if the button is enabled.
-                    if (!button->enabled) goto skip;
+                    if (!button->enabled) continue;
                     //If it is enabled, set the code of the event equal to the remapped value.
                     ev.code = button->remap_code;
                     //Break from the loop.
@@ -125,8 +125,6 @@ static gpointer remap_loop(gpointer user_data)
         write_event(uinput_fd, ev.type, ev.code, ev.value);
         //Write a sync event to make sure the system flushes the input and uses the event
         write_event(uinput_fd, EV_SYN, SYN_REPORT, 0);
-
-        skip:;
     }
 
     return NULL;
