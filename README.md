@@ -6,16 +6,24 @@ A barebones software to remap mouse device buttons and change mouse sensitivity.
 # Installation
 The program relies on several dependencies.
 <br />
-The dependencies are gcc, gtk4, libevdev, and make.
+<br />
+`The dependencies are gcc, gtk4, libevdev, and make.`
 <br/>
-To install gcc on Ubuntu/Debian, use the following command:
-  sudo apt install gcc
+To install gcc on Ubuntu/Debian, use the following command: <br />
+  `sudo apt install gcc`
 <br />
-To install make on Ubuntu/Debian, use the following command:
-  sudo apt install make
+To install make on Ubuntu/Debian, use the following command: <br />
+  `sudo apt install make`
 <br />
-To install gtk4 on Ubuntu/Debian, use the following command:
-  sudo apt install libgtk-4-dev
+To install gtk4 on Ubuntu/Debian, use the following command: <br />
+  `sudo apt install libgtk-4-dev`
 <br />
-To install libevdev on Ubuntu/Debian, use the following command:
-  sudo apt install libevdev-dev
+To install libevdev on Ubuntu/Debian, use the following command: <br />
+  `sudo apt install libevdev-dev`
+<br />
+<br />
+After the dependencies have been installed, cd into the `src` directory and use the command: <br />
+`make` 
+<br />
+<br />
+Then run the program `./mousecontroller` as root using the sudo command.
