@@ -4,6 +4,12 @@
 #include <gtk/gtk.h>
 #include "input_detection.h"
 
+/*
+ * The EditorWidgets_t struct gets tied to the editor page data.
+ * It contains elements that need to be changed/are unique to each 
+ * mouse device. For instance, the name_label needs to be changed
+ * for each device. 
+ */
 typedef struct 
 {
     GtkLabel *name_label;

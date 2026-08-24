@@ -130,7 +130,7 @@ GtkWidget *build_remap_row(MouseButtons_t *button, RemapRow_t **out_row)
 
     //Create a checkbox button
     GtkWidget *toggle = gtk_check_button_new_with_label("Enabled");
-    //Set the default state to true
+    //Set the default state to the button data enabled boolean
     gtk_check_button_set_active(GTK_CHECK_BUTTON(toggle), button->enabled);
     //Create a callback linking the "toggled" event to on_enable_toggled and passing the row data
     g_signal_connect(toggle, "toggled", G_CALLBACK(on_enable_toggled), row);

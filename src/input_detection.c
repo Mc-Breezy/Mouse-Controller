@@ -62,7 +62,7 @@ void scan_mice(void)
             {
                 printf("Found mouse: %s\n", path);
                 printf("  Name: %s\n", libevdev_get_name(dev));
-                printf("  ID: bus=%04x vendor=%04x product=04x\n",
+                printf("  ID: bus=%04x vendor=%04x product=%04x\n",
                 libevdev_get_id_bustype(dev), 
                 libevdev_get_id_vendor(dev),
                 libevdev_get_id_product(dev));

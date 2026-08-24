@@ -125,7 +125,7 @@ static gpointer remap_loop(gpointer user_data)
         write_event(uinput_fd, ev.type, ev.code, ev.value);
         //Write a sync event to make sure the system flushes the input and uses the event
         write_event(uinput_fd, EV_SYN, SYN_REPORT, 0);
-      
+
         skip:;
     }
 

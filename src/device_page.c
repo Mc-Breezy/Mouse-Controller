@@ -29,7 +29,7 @@ static GtkWidget *make_device_button(MouseDevice_t *info, GtkStack *stack)
 
     //Button that the user will be allowed to click to go to the editor page for the device
     GtkWidget *button = gtk_button_new();
-    //Prevent the button from expanding more than it needs to
+    //Set the anchor points of the button
     gtk_widget_set_halign(button, GTK_ALIGN_START);
     gtk_widget_set_valign(button, GTK_ALIGN_START);
     //Prevent it from expanding horizontally
